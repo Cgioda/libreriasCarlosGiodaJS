@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de préstamo</title>
+
+
+    <h1>Bienvenidos a nuestro cotizador de préstamos</h1>
+
+
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="navbar">Bienvenido</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipos de préstamo
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#monto">Cotiza mi préstamo</a></li>
+                  <li><a class="dropdown-item" href="#option1">Préstamos prearmados</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="monto_manual">
+
+    </div>
+
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h2>Cotizar mi propio préstamo (interés 12% anual)</h2> 
+    <input type="number" placeholder="Escribe el monto que desea Adquirir" id="monto"> 
+    <input type="number" placeholder="Escriba los años que en los que desea abonar su préstamo" id="anios"> 
+    <button id="cotizar" class="btn btn-success" > cotizar </button>
+   
+    <br>
+    <br>
+    <br> 
+    <br>
+
+
+
+    <h2>Seleccionar un préstamo prearmado (interés 8% anual)</h2>
+    <h3>$10000 - 1 año / 
+           $20000 - 2 años / 
+           $30000 - 3 años
+    </h3>
+    <div id="mensaje_prearmado"></div>
+    <button id="option1">Opción 1</button>
+    <button id="option2">Opción 2</button>
+    <button id="option3">Opción 3</button>
+
+
+
+
+    <script src="js/main.js">  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
